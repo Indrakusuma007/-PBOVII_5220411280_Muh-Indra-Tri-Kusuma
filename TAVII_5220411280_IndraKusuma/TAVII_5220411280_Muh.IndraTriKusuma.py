@@ -55,7 +55,12 @@ class PemeriksaanLapangan:
         print(f"Hasil Pemeriksaan   : {self.__hasil_pemeriksaan}")
 
 
-pasien1 = Pasien("Indra Kusuma", "19-03-2002", "Jl. Jend Sudirman", "082133651063")
+nama_pasien = input("Masukkan Nama Pasien: ")
+tanggal_lahir_pasien = input("Masukkan Tanggal Lahir Pasien: ")
+alamat_pasien = input("Masukkan Alamat Pasien: ")
+nomor_kontak_pasien = input("Masukkan Nomor Kontak Pasien: ")
+
+pasien1 = Pasien(nama_pasien, tanggal_lahir_pasien, alamat_pasien, nomor_kontak_pasien)
 pasien1.tampilkan_info_pasien()  
 
 resep_obat = Resep("Obat Tetes Mata", "2 tetes", "3 kali sehari")
